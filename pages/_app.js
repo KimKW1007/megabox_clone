@@ -23,9 +23,9 @@ function MyApp({ Component, pageProps, movies, dramas}) {
   )
 }
 MyApp.getInitialProps = async(context)=>{
-  const moviesRes = await (await fetch(`http://localhost:3000/api/movies/`)).json();
+  const moviesRes = await (await fetch(`https://megabox-clone-git-main-kimkw1007.vercel.app/api/movies/`)).json();
   const movies = moviesRes.results;
-  const dramasRes = await (await fetch(`http://localhost:3000/api/dramas/`)).json();
+  const dramasRes = await (await fetch(`https://megabox-clone-git-main-kimkw1007.vercel.app/api/dramas/`)).json();
   const dramas = dramasRes.results;
   return {
     movies,
