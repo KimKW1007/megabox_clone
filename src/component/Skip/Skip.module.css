@@ -1,0 +1,13 @@
+#skip{
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  background: #2a155a;
+  width: 100%;
+}
+#skip li{
+
+}
+#skip li a{display: block; text-align: center; color: #fff; line-height: 0; font-size: 0; text-decoration: underline; }
+#skip li a:focus{line-height: 40px; font-size: 14px;}

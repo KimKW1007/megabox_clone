@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+#section{
+  overflow: hidden;
+  width: 100%;
+  padding: 50px 0 110px;
+  background: #252451;
+  color: #fff;
+}
+.section a{
+  color: #fff;
+}
+.container{
+  width: 1100px;
+  margin: 0 auto;
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title h2{
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: -1.5px;
+}
+.view_more_btn_box{
+  display: block;
+
+}
+.view_more_btn_box a{
+  display: flex;
+  align-items: center;
+  color: #bbb;
+  font-size: 15px;
+  letter-spacing: -0.4px;
+  font-weight: 400;
+}
+.view_more_btn_box a i {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  background: url(../../../public/img/ico-more-cross-gray.png) no-repeat center center;
+  background-size: cover;
+}
+
+.content{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-left: 20px;
+}
+.current_item_box{
+  width: 300px;
+}
+.current_item_box::after{
+  content: '';
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  display: block;
+  width: 118px;
+  height: 128px;
+  background: url(../../../public/img/bg-bage-curation-classic.png) no-repeat center center;
+  background-size: cover;
+}
+.current_item_box .currentImg_box{
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 300px;
+  height: 430px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.current_item_box img{
+  width: 100%;
+  height: 100%;
+}
+
+.detail_box{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail_box button{
+  width: 145px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  color: #fff;
+}
+.detail_btn{
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+}
+.ticketing_btn{
+  background: var(--ticketing-button-bg);
+}
+
+.item_tit{
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.466);
+}
+.item_tit p{
+  font-size: 20px;
+}
+.item_tit h3{
+  padding: 10px 0;
+  line-height: 1.5;
+  font-size: 30px;
+}
+.item_tit h3 span{
+  font-size: 20px;
+}
+.desc{
+  padding: 10px 0;
+  font-size: 15px;
+  width: 480px;
+  word-break: keep-all;
+}
+.desc span{
+  display: block;
+  padding: 20px 0;
+}
+.desc p{
+  line-height: 2;
+}
+.desc p:nth-of-type(1){
+  padding: 0 0 20px;
+}
+
+.item_list{
+  display: flex;
+  margin: 0 -8px;
+}
+.item{
+  padding: 0 8px;
+}
+.item a{
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+.item a img{
+  width: 170px;
+  height: 244px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.item a p{
+  padding: 10px 0 0;
+}

@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+#section {
+  width: 100%;
+  padding: 124px 0 170px;
+  position: relative;
+  z-index: 1;
+  background: #161616;
+}
+
+#section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  filter: blur(10px);
+  opacity: 0.2;
+  background-position: 50% 0;
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+}
+
+#section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 2;
+  background: url(../../../public/img/bg-movie-detail-pattern.png) repeat;
+}
+
+.container {
+  position: relative;
+  z-index: 3;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin: 50px 0 30px;
+  color: #fff;
+}
+
+.title h3 {
+  display: inline-block;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.541);
+  font-size: 15px;
+  font-weight: 400;
+  cursor: default;
+}
+
+.view_more_btn {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.view_more_btn a {
+  display: flex;
+  align-items: center;
+  color: #bbb;
+  font-size: 15px;
+  letter-spacing: -0.4px;
+  font-weight: 400;
+}
+
+.view_more_btn a i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  background: url(../../../public/img/ico-more-cross-gray.png) no-repeat center center;
+  background-size: cover;
+}
+
+.banner ul {
+  display: flex;
+  justify-content: space-between;
+  counter-reset: num;
+}
+
+.banner ul li .img_box {
+  position: relative;
+  display: block;
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+
+.banner ul li .img_box::before {
+  content: counter(num);
+  position: absolute;
+  z-index: 3;
+  left: 10%;
+  top: 5%;
+  font-size: 20px;
+  font-style: italic;
+  color: #fff;
+  counter-increment: num 1;
+}
+
+.banner ul li .img_box::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(.38turn, rgba(0, 0, 0, 0.7) 8%, transparent 30% 80%, rgba(0, 0, 0, 0.7));
+}
+
+.banner ul li .img_box img {
+  position: relative;
+  z-index: 1;
+  width: 245px;
+  height: 352px;
+  vertical-align: top;
+}
+
+.banner ul li .img_box div {
+  opacity: 0;
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: opacity .3s ease-in-out;
+}
+
+.banner ul li .img_box:hover div {
+  opacity: 1;
+}
+
+.banner ul li .img_box div span {
+  display: block;
+  text-align: center;
+  padding: 10px 0 0;
+  font-size: 14px;
+  border-top: 1px solid rgb(190, 190, 190);
+}
+
+.banner ul li .img_box div span i {
+  font-size: 20px;
+  padding: 0 10px;
+  letter-spacing: 2px;
+  color: #59bec9;
+}
+
+/* 037b94 */
+.btn_box {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_box button {
+  border-radius: 5px;
+}
+
+.btn_box button.heart {
+  width: 80px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 5px;
+}
+
+.btn_box button.heart::before {
+  content: '';
+  display: block;
+  width: 17px;
+  height: 15px;
+  margin-right: 5px;
+  background: url(../../../public/img/ico-heart-toggle-main.png) no-repeat 0 0;
+}
+
+.btn_box button.heart.onHeart::before {
+  background-position: 100% 0;
+}
+
+.btn_box button:nth-child(2) {
+  width: 160px;
+  height: 36px;
+  background: var(--ticketing-button-bg);
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+
+.aside_box {
+  margin-top: 50px;
+  height: 75px;
+  background: rgba(57, 57, 57, 0.3);
+}
+
+.aside_box ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.aside_box ul li {
+  flex: 1;
+}
+
+.aside_box ul li:not(:last-child) {
+  border-right: 1px solid rgb(204, 204, 204);
+}
+
+.aside_box ul li:nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+
+.aside_box ul li:nth-child(1) div {
+  display: inline-flex;
+  border-bottom: 1px solid rgb(114, 114, 114);
+  transition: border-bottom .3s;
+}
+
+.aside_box ul li:nth-child(1) div:focus-within {
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.aside_box ul li:nth-child(1) div input {
+  width: 170px;
+  height: 29px;
+  padding: 0 10px;
+  background: rgba(0, 0, 0, 0);
+  outline: 0;
+  color: #fff;
+  font-size: 15px;
+}
+
+.aside_box ul li:nth-child(1) div input::placeholder {
+  font-size: 14px;
+  transition: color .3s;
+}
+
+.aside_box ul li:nth-child(1) div input:focus::placeholder {
+  color: #fff;
+}
+
+.aside_box ul li:nth-child(1) div button {
+  width: 30px;
+  height: 29px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.aside_box ul li:not(:nth-child(1)) {
+  display: flex;
+  justify-content: center;
+}
+
+.aside_box ul li:not(:nth-child(1)) a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.aside_box ul li:not(:nth-child(1)) a:hover {
+  text-decoration: underline;
+}
+
+.aside_box ul li:not(:nth-child(1)) a img {
+  display: block;
+  width: 24px;
+  height: 26px;
+  margin-right: 6px;
+}
+
+.mouse_motion{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  bottom: -100px;
+  width: 16px;
+  height: 24px;
+  transform: translateX(-50%);
+  border: 2px solid rgb(185, 185, 185);
+  border-radius: 22px;
+  animation: mouseMove 1.5s  infinite;
+}
+.mouse_motion em{
+  display: inline-block;
+  width: 2px;
+  height: 4px;
+  background: rgb(185, 185, 185);
+  border-radius: 50%;
+  margin-top: 5px;
+}
+@keyframes mouseMove {
+  50%{bottom:-85px}
+}

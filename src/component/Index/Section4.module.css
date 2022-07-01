@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+#section{
+  overflow: hidden;
+  width: 100%;
+  padding: 50px 0 110px;
+}
+.container{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.title h2{
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: -1.5px;
+}
+
+.list_item{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.list_item li{
+  width: 170px;
+  height: 170px;
+}
+.list_item li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 8px 1px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+}
+.list_item li a:hover{
+  background-position: 0% 100%;
+}
+
+
+.notice{
+  border-bottom: 1px solid rgba(190, 190, 190, 0.5);
+  border-top: 1px solid rgba(190, 190, 190, 0.5);
+  margin-top: 50px;
+}
+.inner{
+  padding: 20px 0;
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  margin: 0 -16px;
+}
+.inner > div{
+  padding: 0 16px;
+  font-weight: 300;
+}
+.inner > div:not(:last-child){
+  border-right: 1px solid rgba(190, 190, 190, 0.6);
+}
+.desc{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.desc a{
+  display: flex;
+}
+.desc a:hover{
+  text-decoration: underline;
+}
+
+.desc a span{
+  display: block;
+  font-weight: 500;
+  padding-right: 6px;
+  color: var(--ticketing-button-bg);
+}
+.desc > span{
+  display: inline-block;
+  margin-top: 2px;
+  color: #666;
+  font-family: "Roboto",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.detail_box a{
+  display: flex;
+  color: #666;
+  align-items: center;
+}
+.detail_box a:hover{
+  text-decoration: underline;
+}
+.detail_box a::after{
+  content: '';
+  display: block;
+  width: 7px;
+  height: 12px;
+  margin-top: 2px;
+  margin-left: 7px;
+  background: url(../../../public/img/ico-arr-right-gray.png);
+}
+
+.item_list{
+  display: flex;
+  padding: 50px 0 0;
+}
+.item_list li{
+  flex: 1;
+  text-align: center;
+  padding: 0 30px;
+  height: 90px;
+}
+
+.item_list a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  letter-spacing: -.4px;
+  font-weight: 300;
+}
+.item_list li:last-child a{
+  justify-content: space-between;
+}
+
+.item_list img{
+  display: block;
+  margin: 0 auto;
+}
+.item_list li:last-child img{
+  padding-top: 10px;
+}
+.item_list span{
+  font-size: 15px;
+}
+
+.item_list a:hover span{
+  text-decoration: underline;
+}

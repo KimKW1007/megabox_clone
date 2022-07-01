@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+#footer{
+  position: relative;
+  padding: 30px 0 50px;
+  background: #f8f8fa;
+  font-size: 12.7px;
+  letter-spacing: -0.2px;
+}
+.container{
+  width: 1100px;
+  margin: 0 auto;
+}
+.f_info1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.f_info1 ul{
+  display: flex;
+}
+.f_info1 ul li{
+  padding-right: 13px;
+  font-weight: 300;
+}
+.f_info1 ul li:nth-child(7){
+  font-weight: 600;
+}
+
+.search_cinema a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgb(189, 189, 189);
+  font-size: 13px;
+  border-radius: 30px;
+}
+
+.search_cinema a i{
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  background: url(../../../public/img/ico-footer-search.png);
+}
+
+.f_info2{
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.f_left{
+  display: flex;
+}
+.f_logo{
+  margin-right: 20px;
+}
+.f_logo img{
+  width: 100%;
+}
+
+.f_address p{
+  line-height: 1.5;
+}
+.f_address div {
+  display: flex;
+}
+.f_address div p{
+  position: relative;
+}
+.f_address div p:not(:last-child){
+  padding-right: 10px;
+}
+.f_address div p:not(:last-child)::after{
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 2px;
+  border-radius: 50px;
+  background: #000;
+}
+
+.f_sns ul{
+  display: flex;
+}
+.f_sns ul li{
+  margin-left: 6px;
+}
+.f_sns ul li a{
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.f_sns ul li a img{
+  width: 100%;
+}
+.copy{
+  font-family: "Roboto",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

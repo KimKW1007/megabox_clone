@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+#section{
+  width: 100%;
+  padding: 50px 0 110px;
+  background: linear-gradient(transparent 60% , #503396 60%);
+}
+.container{
+  width: 1100px;
+  margin: 0 auto;
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title h2{
+  font-weight: 400;
+  font-size: 30px;
+}
+.view_more_btn{
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../../../public/img/btn-more-cross-purple.png) no-repeat center center;
+  background-size: cover;
+}
+.slide_wrap{
+  width: 685px;
+  height: 325px;
+}
+
+.slide{
+  display: flex;
+}
+.slide a{
+  display: block;
+}
+.slide img{
+  width: 100%;
+}
+.slide_coverImg_box{
+  width: 385px;
+  height: 325px;
+}
+.slide_txtImg_box{
+  width: 300px;
+  height: 230px;
+}
+.play_btn{
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: auto;
+  bottom: 42px;
+  left: 36.2%;
+  width: 10px;
+  height: 12px;
+  z-index: 3;
+  background: transparent;
+  overflow: hidden;
+  outline: 0;
+}
+.play_btn.pause{
+  width: 8px;
+  justify-content: center;
+}
+.play_btn::after,
+.play_btn::before{
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  background: #155e88;
+}
+.play_btn.pause::after{
+  position: relative;
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  z-index: 1;
+  background: #155e88;
+  transform: rotate(45deg) translate(-1px, 3px);
+}
+.play_btn.pause::before{
+  display: none;
+}
+
+.banner_box{
+  display: flex;
+}
+
+.banner_box img{
+  width: 100%;
+}
+.bannerLong{
+  width: 441px;
+  height: 204px;
+}
+.bannerShort{
+  width: 204px;
+  height: 204px;
+  margin-left: 20px;
+}
+.bannerItem{
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .24);
+}
+
+
+.menu_link{
+  width: 100%;
+  margin-top: 60px;
+}
+.menu_link ul{
+  display: flex;
+}
+.menu_link ul li{
+  flex: 1;
+}
+.menu_link ul li a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu_link ul li:nth-child(3) a div{
+  padding-top: 5px;
+}
+.menu_link ul li a div{
+  height: 60px;
+}
+.menu_link ul li a div img{
+  width: 100%;
+}
+.menu_link ul li a span{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.2px;
+}
